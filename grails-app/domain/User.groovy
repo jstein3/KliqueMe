@@ -1,9 +1,9 @@
-/**
- * Created with IntelliJ IDEA.
- * User: JacobS
- * Date: 3/9/13
- * Time: 1:01 PM
- * To change this template use File | Settings | File Templates.
- */
 class User {
+    String userid
+    byte[] avatar
+    String avatarType
+    static constraints = {
+        avatar(nullable:true, maxSize: 16384 /* 16K */)
+        avatarType(nullable:true)
+    }
 }
